@@ -66,9 +66,9 @@ Brindar una perspectiva de comparación entre Datawarehouse y DataLakes, basada 
 Un Data Warehouse es una base de datos corporativa en la que se integra información depurada de las diversas fuentes que hay en la organización. Dicha
 información debe ser homogénea y fiable, se almacena de forma que permita su análisis desde muy diversas perspectivas, y que a su vez dé unos tiempos de
 respuesta óptimos. Para ello la información se encuentra altamente desnormalizada y modelada de una forma bastante diferente a los sistemas transaccionales,
-principalmente se utilizan los modelos en estrella (star schema) y en copo de nieve (snowflake schema).\cite{robles3}
+principalmente se utilizan los modelos en estrella (star schema) y en copo de nieve (snowflake schema).
 
-\subsubsection{Características DataWarehouse}	
+\subsubsection{\textbf{Características DataWarehouse}}	
 
 Un Data Warehouse es mucho más que lo que hemos comentado hasta el momento. Según Bill Inmon se caracteriza por ser:
 \begin{itemize}
@@ -77,24 +77,20 @@ Un Data Warehouse es mucho más que lo que hemos comentado hasta el momento. Seg
 	tablas con información similar.
 	\item \textbf{Histórico (variante en el tiempo):}   los datos, que pueden ir variando a lo largo del tiempo, deben quedar reflejados de forma que al ser consultados reflejen estos cambios y no se altere la realidad que había en el momento en que se almacenaron, evitando así la problemática que ocurre en los sistemas operacionales, que reflejan solamente el estado de la actividad de negocio presente. Un Data Warehouse debe almacenar los diferentes valores que
 toma una variable a lo largo del tiempo. 
-	\item \textbf{No volátil:}   la información de un Data Warehouse, una vez introducida, debe ser de sólo lectura, nunca se modifica ni se elimina, y ha de ser permanente y  mantenerse para futuras consultas. \\
+	\item \textbf{No volátil:}   la información de un Data Warehouse, una vez introducida, debe ser de sólo lectura, nunca se modifica ni se elimina, y ha de ser permanente y  mantenerse para futuras consultas. \cite{referenciaestrella1}\\
+\end{itemize}
 
 Adicionalmente estos almacenes contienen metadatos (datos sobre los datos), que aportan un valor adicional, permitiendo tener información sobre su procedencia (sobre todo cuando tenemos múltiples fuentes), la periodicidad con la que han sido introducidos, la fiabilidad que nos ofrecen, etc. Todo ello nos aporta una ayuda adicional, tanto al usuario final como a los técnicos responsables de su mantenimiento, ayudando a estos últimos en aspectos como su auditoría y administración. \\
 
-Kimball determinó que para él un Data Warehouse no era más que un conjunto de los Data Marts de una organización. Un Data Mart es una copia de las transacciones específicamente estructurada para la consulta y el análisis. Defiende por tanto una metodología Bottom-up a la hora de diseñar un almacén de datos.\\
+Kimball determinó que para él un Data Warehouse no era más que un conjunto de los Data Marts de una organización. Un Data Mart es una copia de las transacciones específicamente estructurada para la consulta y el análisis. Defiende por tanto una metodología Bottom-up a la hora de diseñar un almacén de datos. \cite{referenciaestrella2}\\
 
 La diferencia de un Data Mart con respecto a un Data Warehouse es solamente en cuanto al alcance. Mientras que un Data Warehouse es un sistema centralizado con datos globales de la empresa y de todos sus procesos operacionales, un Data Mart es un subconjunto temático de datos, orientado a un proceso o un área de negocio específica. Debe tener una estructura óptima desde todas las perspectivas que afecten a los procesos de dicha área. Es más, según Ralph Kimball, cada Data Mart debe estar orientado a un proceso determinado dentro de la organización, por ejemplo, a pedidos de clientes, a compras, a inventario de almacén, a envío de materiales, etc.\\
 
- La existencia de un Data Warehouse no descarta la existencia de Data Marts, ni viceversa.  \cite{estrella1}
-
-\end{itemize}
-
-
-
+ La existencia de un Data Warehouse no descarta la existencia de Data Marts, ni viceversa.  \cite{referenciaestrella3}
 
 %-------------------------------------------------
 
-\subsection{Data Warehouse en la nube}
+\subsubsection{\textbf{Data Warehouse en la nube}}
 
 Los data warehouses estan atravesando actualmente dos transformaciones muy importantes que tienen el potencial de impulsar niveles significativos de innovación empresarial:
 
@@ -106,11 +102,11 @@ Los data warehouses estan atravesando actualmente dos transformaciones muy impor
 
 La gran mayoría de los departamentos de TI están experimentando un rápido aumento de la demanda de datos. Los directivos quieren tener acceso a más y más datos históricos, mientras que al mismo tiempo, los científicos de datos y los analistas de negocios están explorando formas de introducir nuevos flujos de datos en el almacén para enriquecer el análisis existente, así como impulsar nuevas áreas de análisis. Esta rápida expansión de los volúmenes y fuentes de datos significa que los equipos de TI necesitan invertir más tiempo y esfuerzo asegurando que el rendimiento de las consultas permanezca constante y necesitan proporcionar cada vez más entornos para equipos individuales para validar el valor comercial de los nuevos conjuntos de datos.\\
 
-Existe una creciente necesidad de hacer más con cada vez menos recursos, al mismo tiempo que se garantiza que todos los datos sensibles y estrategicos estén completamente asegurados, a lo largo de todo el ciclo de vida, de la manera más rentable.\cite{robles1}
+Existe una creciente necesidad de hacer más con cada vez menos recursos, al mismo tiempo que se garantiza que todos los datos sensibles y estrategicos estén completamente asegurados, a lo largo de todo el ciclo de vida, de la manera más rentable.\cite{referenciarobles1}
 	
 
 %-------------------------------------------------
-\subsection{Migracion en la nube}
+\subsubsection{\textbf{Migracion en la nube}}
 
 La importancia de la nube para el data warehouse está directamente vinculado a tres factores clave:
 
@@ -127,13 +123,13 @@ Los servicios en la nube deben facilitar todo esto, siendo más rentables ya que
 
 Ubicar conjuntamente el data warehouse junto con los sistemas fuente que ya se estén ejecutándose en la nube
 \end{itemize}
-
-entre las ventajas de mover el data warehouse a la nube
+\newpage
+Entre las ventajas de mover el data warehouse a la nube
 
 \begin{itemize}
 	\item Más fácil consolidación y racionalización
 	\item Monetización más rápida de los datos en la nube
-	\item La nube ofrece mejor protección
+	\item La nube ofrece mejor protección \cite{referenciarobles2}
 \end{itemize}
 
 
@@ -145,7 +141,7 @@ Un DataLakes es un repositorio centralizado que le permite almacenar todos sus d
 \\\\
 Los expertos de la industria estiman que los datos de casi todas las industrias básicamente se duplican cada dos años. Capturar, almacenar y utilizar todos estos datos es un verdadero desafío. \\
 
-\textbf{Beneficios de DataLakes}
+\subsubsection{\textbf{Beneficios de DataLakes}}
 \begin{itemize}
 	\item \textbf{ Centralización de fuentes de contenido dispares:} Las fuentes de contenido dispares a menudo contienen información confidencial que requerirá la implementación de las medidas de seguridad apropiadas.
 	\item  \textbf{ Medidas de seguridad:} se otorga acceso a cierta información a los usuarios del data lake que no tienen acceso a la fuente de contenido original. 
@@ -160,7 +156,7 @@ Los expertos de la industria estiman que los datos de casi todas las industrias 
 				\end{center}
 			\end{figure}
 %-------------------------------------------------
-\subsection{COMPONENTES DE DATALAKES}
+\subsubsection{\textbf{Componentes de DataLakes}}
 
 \begin{itemize}
 	\item \textbf{ Ingestión y almacenamiento de datos:}Es la capacidad de adquirir datos en tiempo real o en lotes, y también es la capacidad de almacenar datos y hacerlos accesibles.\cite{referenciasosa3}
@@ -171,7 +167,7 @@ También tiene la función de soluciones de ingeniería, que pueden extraer valo
 \end{itemize}
 
 %-------------------------------------------------
-\subsection{ARQUITECTURA DE UN DATA LAKE}
+\subsubsection{\textbf{Arquitectura de un DataLake}}
 \begin{itemize}
 	\item \textbf{ Data lakes en Hadoop:} Hadoop es la opción que se asocia mayormente con los data lakes, por defecto. \cite{referenciasosa2}\\\\
 • Mayor familiaridad entre los tecnólogos \\
@@ -190,26 +186,28 @@ También tiene la función de soluciones de ingeniería, que pueden extraer valo
 
 	\item  \textbf{ Data lakes en Azure:} Azure es un data lake de Microsoft. Tiene una capa de almacenamiento y de analítica.Tanto el almacenamiento como la computación en cloud facilitan su manejo.\\\\
 • Servicios analíticos robustos con funcionalidades potentes\\
-• Fácil de migrar desde un clúster Hadoop existente\\
+• Fácil de migrar desde un clúster Hadoop \\
 • Muchos expertos en big data conocen Hadoop y sus herramientas, de modo que resulta fácil encontrar trabajadores cualificados.\\
 • La integración con Active Directory garantiza que no son necesarios esfuerzos adicionales para gestionar la seguridad\\
 \end{itemize}
-
+\newpage
 %-------------------------------------------------
 
-\subsection{COMPARACION DE DATAWAREHOUSE Y DATALAKES}	
+\section{COMPARACION DE DATAWAREHOUSE Y DATALAKES \cite{referenciatorres1} \cite{referenciatorres2}}	
 \begin{figure}[htb]
 				\begin{center}
 					\includegraphics[width=10cm]{./IMAGENES/Imagen1}
 				\end{center}
 			\end{figure}
 %-----------------------------------------------------------------
+
+
 \section{Conclusiones}
 
 \begin{itemize}
 \item Es necesario revisar la categorías de un lago de datos y un almacén de datos, para analizar cual se adapta mejor al caso de uso en el que se desea trabajar.
 \item Cuando se construyen tuberías de datos, es necesario implementar una combinación de ambas soluciones de almacenamiento.
-\item El lago de datos integran diferentes tipos de datos para generar preguntas completamente nuevas, ya que es probable que estos usuarios no usen almacenes de datos porque pueden necesitar ir más allá de sus capacidades, mientras que en el almacén de datos la mayoría de los usuarios de una organización están operativos. Este tipo de usuarios solo se preocupa por los informes y las métricas clave de rendimiento.
+\item El lago de datos integran diferentes tipos de datos para generar preguntas completamente nuevas, ya que es probable que estos usuarios no usen almacenes de datos porque pueden necesitar ir más allá de sus capacidades, mientras que en el almacén de datos la mayoría de los usuarios de una organización están operativos. Este tipo de usuarios solo se preocupa por los informes y las métricas clave de rendimiento. 
 
 \end{itemize}
 
