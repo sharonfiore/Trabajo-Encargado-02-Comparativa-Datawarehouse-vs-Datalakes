@@ -66,7 +66,7 @@ Dar una visión clara de BI, desde las perspectivas de los autores que sentaron 
 Un Data Warehouse es una base de datos corporativa en la que se integra información depurada de las diversas fuentes que hay en la organización. Dicha
 información debe ser homogénea y fiable, se almacena de forma que permita su análisis desde muy diversas perspectivas, y que a su vez dé unos tiempos de
 respuesta óptimos. Para ello la información se encuentra altamente desnormalizada y modelada de una forma bastante diferente a los sistemas transaccionales,
-principalmente se utilizan los modelos en estrella (star schema) y en copo de nieve (snowflake schema).
+principalmente se utilizan los modelos en estrella (star schema) y en copo de nieve (snowflake schema).\cite{robles3}
 
 \subsubsection{Características DataWarehouse}	
 
@@ -94,48 +94,47 @@ La diferencia de un Data Mart con respecto a un Data Warehouse es solamente en c
 
 %-------------------------------------------------
 
-\subsection{DATAWAREHOUSE *************}
+\subsection{Data Warehouse en la nube}
+
+Los data warehouses estan atravesando actualmente dos transformaciones muy importantes que tienen el potencial de impulsar niveles significativos de innovación empresarial:
+
+
 \begin{itemize}
-	\item Descomposición funcional
-	\item Diagrama de contexto
-	\item Diagrama de flujo de datos
-	\item Diagrama de transición de estados
-	\item Pseudocódigo
+	\item La primera área de transformación es el impulso para aumentar la agilidad general.
+	\item La segunda área de transformación gira en torno a la necesidad de mejorar el control de costes.
 \end{itemize}
 
-	c. Modelo de datos. Se trabaja con 2 tipos de modelos:
-		\begin{itemize}
-			\item El Modelo de datos nos muestra los datos primitivos, tomando en cuenta el elemento tiempo, se plasman los cálculos que se realicen y finalmente se muestran sus relaciones.
-		\end{itemize}
+La gran mayoría de los departamentos de TI están experimentando un rápido aumento de la demanda de datos. Los directivos quieren tener acceso a más y más datos históricos, mientras que al mismo tiempo, los científicos de datos y los analistas de negocios están explorando formas de introducir nuevos flujos de datos en el almacén para enriquecer el análisis existente, así como impulsar nuevas áreas de análisis. Esta rápida expansión de los volúmenes y fuentes de datos significa que los equipos de TI necesitan invertir más tiempo y esfuerzo asegurando que el rendimiento de las consultas permanezca constante y necesitan proporcionar cada vez más entornos para equipos individuales para validar el valor comercial de los nuevos conjuntos de datos.\\
 
-El Modelo de Datos del Data Warehouse. Los modelos anteriores nos deberán entregar la definición de los sujetos a los que estará orientado el Data Warehouse. Debe venir en 3 perspectivas y son explicadas en la siguiente tabla:
-
-
-	d. Una vez que se tiene conocimiento de este modelo se deben tomar ciertas decisiones sobre el diseño del Data Warehouse. Entre estas decisiones tenemos las siguientes:
-		\begin{itemize}
-			\item Normalización, debemos decidir el grado al que nuestro Data Warehouse
-			\item Granularidad
-			\item Particiones
-			\item  Minería de Datos
-		\end{itemize}
-
+Existe una creciente necesidad de hacer más con cada vez menos recursos, al mismo tiempo que se garantiza que todos los datos sensibles y estrategicos estén completamente asegurados, a lo largo de todo el ciclo de vida, de la manera más rentable.\cite{robles1}
 	
 
 %-------------------------------------------------
-\subsection{DATAWAREHOUSE}
-\begin{figure}[htb]
-				\begin{center}
-					\includegraphics[width=9cm]{./IMAGENES/1}
-				\end{center}
-			\end{figure}
+\subsection{Migracion en la nube}
 
-La arquitectura que plantea Bill Inmon consta de las siguientes partes: \cite{robles1}
+La importancia de la nube para el data warehouse está directamente vinculado a tres factores clave:
 
+\begin{itemize}
+	\item Mayor agilidad
 
+Es más rápido, más fácil y más eficiente iniciar estos nuevos proyectos centrados en los datos utilizando los servicios en la nube.
 
-\subsection{La estructura del DataWarehouse}	
-En cuanto a la estructura interna del DataWarehouse, para Inmon la prioridad es que el modelo de datos esté construido en tercera 
-/*******************************************************/
+	\item Mejor control de costes
+
+Los servicios en la nube deben facilitar todo esto, siendo más rentables ya que todas las características de seguridad se pueden habilitar de forma predeterminada y mejorada, y actualizada de forma transparente.
+
+	\item Co-localización
+
+Ubicar conjuntamente el data warehouse junto con los sistemas fuente que ya se estén ejecutándose en la nube
+\end{itemize}
+
+entre las ventajas de mover el data warehouse a la nube
+
+\begin{itemize}
+	\item Más fácil consolidación y racionalización
+	\item Monetización más rápida de los datos en la nube
+	\item La nube ofrece mejor protección
+\end{itemize}
 
 %-------------------------------------------------
 \subsection{DATALAKES}	
