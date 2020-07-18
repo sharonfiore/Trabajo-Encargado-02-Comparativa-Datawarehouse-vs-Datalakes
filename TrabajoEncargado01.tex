@@ -138,27 +138,40 @@ entre las ventajas de mover el data warehouse a la nube
 
 %-------------------------------------------------
 \subsection{DATALAKES}	
-La metodología se basa en lo que Kimball denomina Ciclo de Vida Dimensional del Negocio. Este ciclo de vida del proyecto de DW, está basado en cuatro principios básicos: 
 
+Un DataLakes es un repositorio centralizado que le permite almacenar todos sus datos estructurados y no estructurados a cualquier escala. 
+\\ Puede almacenar sus datos tal cual, sin tener que estructurar primero los datos, y ejecutar diferentes tipos de análisis, desde paneles y visualizaciones hasta procesamiento de grandes datos, análisis en tiempo real y aprendizaje automático para guiar mejores decisiones.
+\\\\
+Los expertos de la industria estiman que los datos de casi todas las industrias básicamente se duplican cada dos años. Capturar, almacenar y utilizar todos estos datos es un verdadero desafío. \\
+
+\textbf{Beneficios de DataLakes}
 \begin{itemize}
-	\item Centrarse en el negocio: Hay que concentrarse en la identificación de los requerimientos del negocio y su valor asociado, y usar estos esfuerzos para desarrollar relaciones sólidas con el negocio, agudizando el análisis del mismo y la competencia consultiva de los implementadores. 
-	\item Construir una infraestructura de información adecuada: Diseñaruna base de información única, integrada, fácil de usar, de alto rendimiento donde se reflejará la amplia gama de requerimientos de negocio identificados en la empresa. 
-	\item Realizar entregas en incrementos significativos: crear el almacén de datos (DW) en incrementos entregables en plazos de 6 a 12 meses.
-	\item Ofrecer la solución completa: proporcionar todos los elementos necesarios para entregar valor a los usuarios de negocios. 
+	\item \textbf{ Centralización de fuentes de contenido dispares:} Las fuentes de contenido dispares a menudo contienen información confidencial que requerirá la implementación de las medidas de seguridad apropiadas.
+	\item  \textbf{ Medidas de seguridad:} se otorga acceso a cierta información a los usuarios del data lake que no tienen acceso a la fuente de contenido original. 
+	\item  \textbf{ Centralización de fuentes de contenido dispares:} Realizar entregas en incrementos significativos: crear el almacén de datos (DW) en incrementos entregables en plazos de 6 a 12 meses.
+	\item  \textbf{ Centralización de fuentes de contenido dispares:} Ofrecer la solución completa: proporcionar todos los elementos necesarios para entregar valor a los usuarios de negocios. 
 \end{itemize}
 
-
-
+\begin{figure}[htb]
+				\begin{center}
+					\includegraphics[width=10cm]{./IMAGENES/datalake}
+				\end{center}
+			\end{figure}
 %-------------------------------------------------
-\subsection{IMPLEMENTACIONES DE DATALAKES}
+\subsection{COMPONENTES DE DATALAKES}
 
-/***********************************/
+\begin{itemize}
+	\item \textbf{ Ingestión y almacenamiento de datos:}Es la capacidad de adquirir datos en tiempo real o en lotes, y también es la capacidad de almacenar datos y hacerlos accesibles.
+	\item  \textbf{Procesamiento de datos:} Es la capacidad de trabajar datos sin procesar para que puedan analizarse a través de procesos estándar. 
+También tiene la función de soluciones de ingeniería, que pueden extraer valor de los datos utilizando procesos regulares y automáticos generados por las operaciones de análisis.
+	\item  \textbf{ Análisis de datos:} Es la creación de módulos para extraer información de los datos de manera sistemática; esto puede suceder en tiempo real o mediante un proceso que se ejecuta periódicamente.
+	\item  \textbf{Integración de datos:} es la capacidad de conectar aplicaciones a la plataforma; En primer lugar, las aplicaciones deben permitir consultar el Data Lake para extraer los datos en el formato correcto, en función del uso que desee hacer de ellos.
+\end{itemize}
+
 %-------------------------------------------------
 \subsection{DATALAKES *********}
 
 Ralph Kimball, plantea la idea de un enfoque dimensional para el diseño de un DW, y afirma que la unión de todos los DM de una organización constituye el DW corporativo, a lo cual se le conoce como el enfoque bottom-up.\\
-
- 
 
 %-------------------------------------------------
 
