@@ -136,6 +136,7 @@ entre las ventajas de mover el data warehouse a la nube
 	\item La nube ofrece mejor protección
 \end{itemize}
 
+
 %-------------------------------------------------
 \subsection{DATALAKES}	
 
@@ -148,8 +149,9 @@ Los expertos de la industria estiman que los datos de casi todas las industrias 
 \begin{itemize}
 	\item \textbf{ Centralización de fuentes de contenido dispares:} Las fuentes de contenido dispares a menudo contienen información confidencial que requerirá la implementación de las medidas de seguridad apropiadas.
 	\item  \textbf{ Medidas de seguridad:} se otorga acceso a cierta información a los usuarios del data lake que no tienen acceso a la fuente de contenido original. 
-	\item  \textbf{ Centralización de fuentes de contenido dispares:} Realizar entregas en incrementos significativos: crear el almacén de datos (DW) en incrementos entregables en plazos de 6 a 12 meses.
-	\item  \textbf{ Centralización de fuentes de contenido dispares:} Ofrecer la solución completa: proporcionar todos los elementos necesarios para entregar valor a los usuarios de negocios. 
+	\item  Una vez que el contenido está en el data lake, puede normalizarse y enriquecerse. 
+	\item  Los usuarios, de diferentes departamentos, potencialmente dispersos por todo el mundo, pueden tener acceso flexible a un data lake y a su contenido desde cualquier lugar.
+	\item Un data lake pone la información de toda la empresa en manos de muchos más empleados para hacer a la organización un todo más inteligente, más ágil y más innovadora.
 \end{itemize}
 
 \begin{figure}[htb]
@@ -169,9 +171,29 @@ También tiene la función de soluciones de ingeniería, que pueden extraer valo
 \end{itemize}
 
 %-------------------------------------------------
-\subsection{DATALAKES *********}
+\subsection{ARQUITECTURA DE UN DATA LAKE}
+\begin{itemize}
+	\item \textbf{ Data lakes en Hadoop:} Hadoop es la opción que se asocia mayormente con los data lakes, por defecto. \\\\
+• Mayor familiaridad entre los tecnólogos \\
+• Más económicos, porque son de código abierto \\
+• Muchas herramientas ETL disponibles para la integración con Hadoop \\
+• Fáciles de escalar \\
+• La localidad de los datos permite una computación más rápida
 
-Ralph Kimball, plantea la idea de un enfoque dimensional para el diseño de un DW, y afirma que la unión de todos los DM de una organización constituye el DW corporativo, a lo cual se le conoce como el enfoque bottom-up.\\
+	\item  \textbf{Data lakes en AWS:} AWS tiene un paquete exhaustivo de ofertas de producto para su solución de data lake.\\\\
+• Paquete de productos exhaustivo y repleto de prestaciones\\
+• Flexibilidad a la hora de elegir productos a partir de requisitos particulares\\
+• Precios bajos\\
+• Nivel de seguridad y conformidad alto\\
+• Separación de computación y almacenamiento para poder ajustar su escala según convenga\\
+• Colaboración con empresas de APN (AWS Partner Network), como Talend, que garantiza una etapa inicial de funcionamiento con AWS exenta de problemas
+
+	\item  \textbf{ Data lakes en Azure:} Azure es un data lake de Microsoft. Tiene una capa de almacenamiento y de analítica.Tanto el almacenamiento como la computación en cloud facilitan su manejo.\\\\
+• Servicios analíticos robustos con funcionalidades potentes\\
+• Fácil de migrar desde un clúster Hadoop existente\\
+• Muchos expertos en big data conocen Hadoop y sus herramientas, de modo que resulta fácil encontrar trabajadores cualificados.\\
+• La integración con Active Directory garantiza que no son necesarios esfuerzos adicionales para gestionar la seguridad\\
+\end{itemize}
 
 %-------------------------------------------------
 
